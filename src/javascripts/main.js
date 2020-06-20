@@ -1,3 +1,10 @@
-import '../styles/main.scss'
+import '../styles/main.scss';
+import 'bootstrap';
+import auth from './components/auth/auth';
 
-console.error('HEY MY DUDE');
+const init = () => {
+  auth.loginButton();
+  console.error('HEY MY DUDE');
+};
+
+init();
