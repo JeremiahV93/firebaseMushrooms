@@ -1,0 +1,12 @@
+
+{
+  "firebaseConfig" : {
+    "apiKey": "AIzaSyBVam3aYjbTZ1KFax_CuHvIQUCARqCJAvY",
+    "authDomain": "jv-firebase-mushrooms.firebaseapp.com",
+    "databaseURL": "https://jv-firebase-mushrooms.firebaseio.com",
+    "projectId": "jv-firebase-mushrooms",
+    "storageBucket": "jv-firebase-mushrooms.appspot.com",
+    "messagingSenderId": "539388716173",
+    "appId": "1:539388716173:web:28f44690231cc54f9eaec4"
+  }
+}
