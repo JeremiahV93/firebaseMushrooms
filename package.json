@@ -1,0 +1,21 @@
+{
+  "name": "firebaseMushrooms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/javascripts/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production --module-bind js=babel-loader",
+    "deploy": "npm run build && firebase deploy"  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeremiahV93/firebaseMushrooms.git"
+  },
+  "keywords": [],
+  "author": "Jeremiah Vasquez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JeremiahV93/firebaseMushrooms/issues"
+  },
+  "homepage": "https://github.com/JeremiahV93/firebaseMushrooms#readme"
+}
