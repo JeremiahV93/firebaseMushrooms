@@ -8,7 +8,7 @@ const buildForest = () => {
       console.error('get works', mushrooms);
       let domString = `
       <h2 class="text-center">Forest</h2>
-      <div class="d-flex flex=wrap">
+      <div class="d-flex flex-wrap">
       `;
       mushrooms.forEach((mushroom) => {
         domString += mushroomComponent.mushroomMaker(mushroom);
@@ -17,8 +17,6 @@ const buildForest = () => {
       utils.printToDom('#forest', domString);
     })
     .catch((err) => console.error('bad stuff', err));
-  const domString = 'I see it!';
-  utils.printToDom('#forest', domString);
 };
 
 export default { buildForest };
