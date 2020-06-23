@@ -2,6 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 
 import mushroomList from '../../components/mushroomList/mushshroom';
+import mycologistList from '../../components/mycologistList/mycologistList';
 
 const authDiv = $('#auth');
 const forestDiv = $('#forest');
@@ -15,6 +16,7 @@ const checkLogInStatus = () => {
       logoutButton.removeClass('hide');
 
       mushroomList.buildForest();
+      mycologistList.buildVillage();
     } else {
       authDiv.removeClass('hide');
       forestDiv.addClass('hide');
