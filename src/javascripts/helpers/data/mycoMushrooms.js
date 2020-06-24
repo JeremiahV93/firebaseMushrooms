@@ -4,7 +4,7 @@ import apiKeys from '../apiKeys.json';
 const baseUrl = apiKeys.firebaseConfig.databaseURL;
 
 const getMycoShroomsByMycoId = (mycoUid) => new Promise((resolve, reject) => {
-  axios.get(`${baseUrl}/mycologistMuhsrooms.json?orderBy="mycologistUid"&equalTo="${mycoUid}"`)
+  axios.get(`${baseUrl}/mycologistMushrooms.json?orderBy="mycologistUid"&equalTo="${mycoUid}"`)
     .then((response) => {
       const mycoShroomsObj = response.data;
       const mycologistMushrooms = [];
