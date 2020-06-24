@@ -17,7 +17,6 @@ const buildMycologist = (e) => {
       `;
 
       utils.printToDom('#single-myco', domString);
-      console.error('HIYA');
     })
     .catch((err) => console.error('problem with single mycologist', err));
 };
