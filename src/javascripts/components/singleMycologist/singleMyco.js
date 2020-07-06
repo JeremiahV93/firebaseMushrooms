@@ -3,6 +3,7 @@ import utils from '../../helpers/utils/utils';
 
 const buildMycologist = (e) => {
   const mycologistId = e.target.closest('.card').id;
+  console.error(mycologistId);
   smash.getSingleMycoWithShrooms(mycologistId)
     .then((mycologist) => {
       let domString = `
