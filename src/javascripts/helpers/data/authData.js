@@ -19,6 +19,7 @@ const checkLogInStatus = () => {
       forestDiv.removeClass('hide');
       hutDiv.removeClass('hide');
       logoutButton.removeClass('hide');
+      $('#new-Shroom').removeClass('hide');
 
       mushroomList.buildForest();
       mycologistList.buildVillage();
@@ -27,6 +28,7 @@ const checkLogInStatus = () => {
       authDiv.removeClass('hide');
       forestDiv.addClass('hide');
       logoutButton.addClass('hide');
+      $('#new-Shroom').addClass('hide');
     }
   });
 };
