@@ -10,25 +10,29 @@ const forestDiv = $('#forest');
 const singleMycDiv = $('#single-myco');
 const hutDiv = $('#hut');
 
-const logoutButton = $('#nav-logout-button');
+const logoutButton = $('#navbar-logout-button');
 
 const checkLogInStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-      authDiv.addClass('hide');
+      authDiv.removeClass('hide');
       forestDiv.removeClass('hide');
       hutDiv.removeClass('hide');
       logoutButton.removeClass('hide');
       $('#new-Shroom').removeClass('hide');
+      $('#newMyco').addClass('hide');
+      $('#google-auth').addClass('hide');
 
       mushroomList.buildForest();
       mycologistList.buildVillage();
       singleMycDiv.removeClass('hide');
     } else {
-      authDiv.removeClass('hide');
+      authDiv.addClass('hide');
       forestDiv.addClass('hide');
       logoutButton.addClass('hide');
       $('#new-Shroom').addClass('hide');
+      $('#newMyco').removeClass('hide');
+      $('#google-auth').removeClass('hide');
     }
   });
 };
