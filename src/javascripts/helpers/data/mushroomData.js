@@ -18,4 +18,6 @@ const getMushrooms = () => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getMushrooms };
+const addMushroom = (newMushroomObj) => axios.post(`${baseUrl}/mushrooms.json`, newMushroomObj);
+
+export default { getMushrooms, addMushroom };
